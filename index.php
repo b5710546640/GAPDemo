@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Item - Start Bootstrap Template</title>
+    <title>หน้าหลัก Gap System</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -54,10 +54,10 @@
     <div class="container" style="margin-top:30px">
               <ul class="nav nav-tabs nav-justified">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#panel_login" role="tab">Login</a>
+                    <a class="nav-link active" data-toggle="tab" href="#panel_login" role="tab">เข้าสู่ระบบ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#panel_register" role="tab">Register</a>
+                    <a class="nav-link" data-toggle="tab" href="#panel_register" role="tab">ลงทะเบียน</a>
                 </li>
               </ul>
         <!-- Tab panels -->
@@ -66,19 +66,12 @@
           <div class="tab-pane fade in show active" id="panel_login" role="tabpanel">
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">ชื่อผู้ใช้</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label for="ีusernameLogin">ชื่อผู้ใช้</label>
+                <input type="text" class="form-control" name="usernameLogin" id="usernameLogin" aria-describedby="emailHelp" placeholder="กรอกชื่อผู้ใช้ หรือ เลขประจำตัวประชาชน13หลัก">
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">รหัสผ่าน</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
-                  Check me out
-                </label>
+                <label for="passwordLogin">รหัสผ่าน</label>
+                <input type="password" class="form-control" name="passwordLogin" id="passwordLogin" placeholder="รหัสผ่าน">
               </div>
               <button type="submit" class="btn btn-primary">เข้าสู่ระบบ</button>
             </form>
@@ -87,51 +80,84 @@
           <!--Panel 2-->
           <div class="tab-pane fade" id="panel_register" role="tabpanel">
             <form>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4" class="col-form-label">ชื่อ</label>
-                  <input type="text" class="form-control" id="inputEmail4" placeholder="=ชื่อ">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPassword4" class="col-form-label">นามสกุล</label>
-                  <input type="text" class="form-control" id="inputPassword4" placeholder="นามสกุล">
-                </div>
+              <div class="form-group">
+                <label for="usernameRegis" class="col-form-label">ชื่อผู้ใช้</label>
+                <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="ชื่อผู้ใช้">
               </div>
               <div class="form-group">
-                <label for="inputEmail4" class="col-form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <label for="passwordRegis" class="col-form-label">รหัสผ่าน</label>
+                <input type="password" class="form-control" name="passwordRegis" id="passwordRegis" placeholder="ตัวเลขหรือตัวอักษร6-8ตัว">
               </div>
               <div class="form-group">
-                <label for="inputPassword4" class="col-form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                <label for="confirmPasswordRegis" class="col-form-label"></label>
+                <input type="password" class="form-control" name="confirmPasswordRegis" id="confirmPasswordRegis" placeholder="ยืนยันรหัสผ่าน">
               </div>
               <div class="form-group">
-                <label for="inputAddress" class="col-form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="form-group">
-                <label for="inputAddress2" class="col-form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <label for="emailRegis" class="col-form-label">Email</label>
+                <input type="email" class="form-control" name="emailRegis" id="emailRegis" placeholder="Email">
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputCity" class="col-form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
+                  <label for="nameRegis" class="col-form-label">ชื่อ</label>
+                  <input type="text" class="form-control" name="nameRegis" id="nameRegis" placeholder="ชื่อ">
                 </div>
-                <div class="form-group col-md-4">
-                  <label for="inputState" class="col-form-label">State</label>
-                  <select id="inputState" class="form-control">Choose</select>
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputZip" class="col-form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
+                <div class="form-group col-md-6">
+                  <label for="fnameRegis" class="col-form-label">นามสกุล</label>
+                  <input type="text" class="form-control" name="fnameRegis" id="fnameRegis" placeholder="นามสกุล">
                 </div>
               </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"> Check me out
-                  </label>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="nationalIDRegis" class="col-form-label">เลขประจำตัวประชาชน</label>
+                  <input type="text" class="form-control" name="nationalIDRegis" id="nationalIDRegis" placeholder="เลขประจำตัวประชนชน13หลัก">
+                </div>
+                <div class="form-group col-md-6">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-3">
+                  <label for="addressNoRegis" class="col-form-label">บ้านเลขที่</label>
+                  <input type="text" class="form-control" name="addressNoRegis" id="addressNoRegis">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="villageRegis" class="col-form-label">หมู่บ้าน</label>
+                  <input type="text" class="form-control" name="villageRegis" id="villageRegis">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="mooRegis" class="col-form-label">หมู่ที่</label>
+                  <input type="text" class="form-control" name="mooRegis" id="mooRegis">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="roadRegis" class="col-form-label">ถนน</label>
+                  <input type="text" class="form-control" name="roadRegis" id="roadRegis">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-3">
+                  <label for="subDistrictRegis" class="col-form-label">ตำบล</label>
+                  <select name="subDistrictRegis" id="subDistrictRegis" class="form-control">Choose</select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="districtRegis" class="col-form-label">อำเภอ</label>
+                  <select name="districtRegis" id="districtRegis" class="form-control">Choose</select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="provinceRegis" class="col-form-label">จังหวัด</label>
+                  <select name="provinceRegis" id="provinceRegis" class="form-control">Choose</select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="postalCodeRegis" class="col-form-label">รหัสไปรษณีย์</label>
+                  <input type="text" class="form-control" name="postalRegis" id="postalRegis">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="phoneRegis" class="col-form-label">โทรศัพท์บ้าน</label>
+                  <input type="text" class="form-control" name="phoneRegis" id="phoneRegis" placeholder="XXX-XXXXXX">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="mobileRegis" class="col-form-label">โทรศัพท์มือถือ</label>
+                  <input type="text" class="form-control" name="mobileRegis" id="mobileRegis" placeholder="XXX-XXXXXXX">
                 </div>
               </div>
               <button type="submit" class="btn btn-primary">ลงทะเบียน</button>
@@ -144,7 +170,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="fixed-bottom py-5 bg-dark">
+    <footer class="collapse fixed-bottom py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
       </div>
