@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>หน้าหลัก Gap System</title>
+    <title>Shop Item - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -16,7 +16,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="./css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
   </head>
 
@@ -31,19 +31,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">หน้าหลัก
+            <li class="nav-item">
+              <a class="nav-link" href="D:/Save/Internship/YiiWeb/index.php">หน้าหลัก
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="user/agriculture/profile.php">ข้อมูลส่วนตัว</a>
+            <li class="nav-item  active">
+              <a class="nav-link" href="profile.php">ข้อมูลส่วนตัว</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="user/agriculture/require.php">ยื่นคำร้อง</a>
+              <a class="nav-link" href="request.php">คำร้องทั้งหมด</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="user/agriculture/status.php">สถานะคำร้อง</a>
+              <a class="nav-link" href="evaluate.php">ประเมิน</a>
             </li>
           </ul>
         </div>
@@ -54,52 +54,60 @@
     <div class="container" style="margin-top:30px">
               <ul class="nav nav-tabs nav-justified">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#panel_login" role="tab">เข้าสู่ระบบ</a>
+                    <a class="nav-link active" data-toggle="tab" href="#panel_account" role="tab">เกี่ยวกับบัญชีผู้ใช้</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#panel_register" role="tab">ลงทะเบียน</a>
+                    <a class="nav-link" data-toggle="tab" href="#panel_profile" role="tab">ข้อมูลส่วนตัว</a>
                 </li>
               </ul>
         <!-- Tab panels -->
         <div class="tab-content card">
           <!--Panel 1-->
-          <div class="tab-pane fade in show active" id="panel_login" role="tabpanel">
-            <form>
+          <div class="tab-pane fade in show active" id="panel_account" role="tabpanel">
+            <div class="form-group" id="group-edit-account">
               <div class="form-group">
-                <label for="ีusernameLogin">ชื่อผู้ใช้</label>
-                <input type="text" class="form-control" name="usernameLogin" id="usernameLogin" aria-describedby="emailHelp" placeholder="กรอกชื่อผู้ใช้ หรือ เลขประจำตัวประชาชน13หลัก">
+                <label for="usernameRegis" class="col-form-label">ชื่อผู้ใช้</label>
+                <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="ชื่อผู้ใช้">
               </div>
               <div class="form-group">
-                <label for="passwordLogin">รหัสผ่าน</label>
-                <input type="password" class="form-control" name="passwordLogin" id="passwordLogin" placeholder="รหัสผ่าน">
+                <label for="passwordRegis" class="col-form-label">รหัสผ่าน</label>
+                <input type="password" class="form-control" name="passwordRegis" id="passwordRegis" placeholder="ตัวเลขหรือตัวอักษร6-8ตัว">
               </div>
-              <button type="submit" class="btn btn-primary">เข้าสู่ระบบ</button>
-            </form>
+              <div class="form-group">
+                <label for="confirmPasswordRegis" class="col-form-label"></label>
+                <input type="password" class="form-control" name="confirmPasswordRegis" id="confirmPasswordRegis" placeholder="ยืนยันรหัสผ่าน">
+              </div>
+              <div class="form-group">
+                <label for="emailRegis" class="col-form-label">Email</label>
+                <input type="email" class="form-control" name="emailRegis" id="emailRegis" placeholder="Email">
+              </div>
+              <button type="button" class="btn btn-primary" id="go-profile-input_btn">บันทึก</button>
+            </div>
+            <div class="form-group" id="group-view-account">
+              <div class="form-group">
+                <label for="usernameRegis" class="col-form-label">ชื่อผู้ใช้</label>
+                <label type="email" class="form-control" name="usernameRegis" id="usernameRegis">somchai-m</label>
+              </div>
+              <div class="form-group">
+                <label for="passwordRegis" class="col-form-label">รหัสผ่าน</label>
+                <label type="password" class="form-control" name="passwordRegis" id="passwordRegis">somchai-m</label>
+              </div>
+              <div class="form-group">
+                <label for="confirmPasswordRegis" class="col-form-label"></label>
+                <label type="password" class="form-control" name="confirmPasswordRegis" id="confirmPasswordRegis">somchai-m</label>
+              </div>
+              <div class="form-group">
+                <label for="emailRegis" class="col-form-label">Email</label>
+                <label type="email" class="form-control" name="emailRegis" id="emailRegis">somchai-m</label>
+              </div>
+              <button type="button" class="btn btn-primary" id="go-profile-input_btn">แก้ไข</button>
+            </div>
           </div>
           <!--/.Panel 1-->
           <!--Panel 2-->
-          <div class="tab-pane fade" id="panel_register" role="tabpanel">
+          <div class="tab-pane fade" id="panel_profile" role="tabpanel">
             <form>
-              <div class="form-group" id="group-info-regis">
-                <div class="form-group">
-                  <label for="usernameRegis" class="col-form-label">ชื่อผู้ใช้</label>
-                  <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="ชื่อผู้ใช้">
-                </div>
-                <div class="form-group">
-                  <label for="passwordRegis" class="col-form-label">รหัสผ่าน</label>
-                  <input type="password" class="form-control" name="passwordRegis" id="passwordRegis" placeholder="ตัวเลขหรือตัวอักษร6-8ตัว">
-                </div>
-                <div class="form-group">
-                  <label for="confirmPasswordRegis" class="col-form-label"></label>
-                  <input type="password" class="form-control" name="confirmPasswordRegis" id="confirmPasswordRegis" placeholder="ยืนยันรหัสผ่าน">
-                </div>
-                <div class="form-group">
-                  <label for="emailRegis" class="col-form-label">Email</label>
-                  <input type="email" class="form-control" name="emailRegis" id="emailRegis" placeholder="Email">
-                </div>
-                <button type="button" class="btn btn-primary" id="go-profile-input_btn">ต่อไป</button>
-              </div>
-              <div class="form-group" id="group-profile-regis" style="display: none">
+              <div class="form-group" id="group-profile-regis">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="nameRegis" class="col-form-label">ชื่อ</label>
@@ -174,10 +182,11 @@
         </div>
 
     </div>
+
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="collapse fixed-bottom py-5 bg-dark">
+    <footer class="collapse navbar-collapse fixed-bottom py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
       </div>
@@ -188,37 +197,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
     <script>
-      $('#go-profile-input_btn').click(function(){
-          var x = document.getElementById('group-info-regis');
-          var y = document.getElementById('group-profile-regis');
-           if (x.style.display === 'none') {
-               x.style.display = 'block';
-           } else {
-               x.style.display = 'none';
-           }
-           if (y.style.display === 'none') {
-               y.style.display = 'block';
-           } else {
-               y.style.display = 'none';
-           }
-       });
-       $('#back_btn').click(function(){
-           var x = document.getElementById('group-info-regis');
-           var y = document.getElementById('group-profile-regis');
-            if (x.style.display === 'none') {
-                x.style.display = 'block';
-            } else {
-                x.style.display = 'none';
-            }
-            if (y.style.display === 'none') {
-                y.style.display = 'block';
-            } else {
-                y.style.display = 'none';
-            }
+        $('#container').find('.input').each(function() {
+          console.log('input');
+          $(this).replaceWith("<span>" + this.value + "</span>");
         });
-
 
     </script>
 
