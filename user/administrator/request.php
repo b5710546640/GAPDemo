@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Item - Start Bootstrap Template</title>
+    <title>คำร้องทั้งหมด GAP System</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -44,6 +44,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="evaluate.php">ประเมิน</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="D:/Save/Internship/YiiWeb/index.php">ออกจากระบบ</a>
             </li>
           </ul>
         </div>
