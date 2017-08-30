@@ -52,32 +52,37 @@
 
     <!-- Page Content -->
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row" id="list-require-form">
+        <div class="col-md-4">
           <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#F-62" role="tab" aria-controls="home">ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-63" role="tab" aria-controls="home">ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-64" role="tab" aria-controls="home">คำขอใบรับรองแหล่งผลิต (สำหรับแปลงเดียว รายเดียว)</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.1" role="tab" aria-controls="home">คำขอใบรับรองการคัดบรรจุผลิตผลพืชอินทรีย์</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.2" role="tab" aria-controls="home">คำขอใบรับรองการแปรรูปผลิตภัณฑ์พืชอินทรีย์</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.3" role="tab" aria-controls="home">คำขอใบรับรองการรวบรวมผลิตผล ผลิตภัณฑ์พืชอินทรีย์</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.4" role="tab" aria-controls="home">คำขอใบรับรองการจัดจำหน่ายผลิตผล ผลิตภัณฑ์พืชอินทรีย์</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.5" role="tab" aria-controls="home">คำขอใบรับรองผลิตผล และผลิตภัณฑ์อินทรีย์ สำหรับผู้นำเข้า</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">คำขอใบรับรองแหล่งผลิตพืชอินทรีย์ การคัดบรรจุ และการแปรรูป(สำหรับกลุ่ม โครงการ องค์กร)</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">------------------------------</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอต่ออายุใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอต่ออายุใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">------------------------------</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอหนังสือรับรอง ใบรับรอง หรือขอแก้ไขข้อมูลในใบรับรอง</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">คำขอยกเลิกการรับรอง</a>
+            <a class="list-group-item list-group-item-action active" id="list-F-62" data-toggle="list" href="#F-62" role="tab" aria-controls="F-62">ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</a>
+            <a class="list-group-item list-group-item-action" id="list-F-63" data-toggle="list" href="#F-63" role="tab" aria-controls="F-63">ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</a>
+            <a class="list-group-item list-group-item-action" id="list-F-64" data-toggle="list" href="#F-64" role="tab" aria-controls="F-64">คำขอใบรับรองแหล่งผลิต (สำหรับแปลงเดียว รายเดียว)</a>
+            <a class="list-group-item list-group-item-action" id="list-F-651" data-toggle="list" href="#F-651" role="tab" aria-controls="F-651">คำขอใบรับรองการคัดบรรจุผลิตผลพืชอินทรีย์</a>
+            <!-- <a class="list-group-item list-group-item-action" id="list-F-65.2" data-toggle="list" href="#F-65.2" role="tab" aria-controls="home">คำขอใบรับรองการแปรรูปผลิตภัณฑ์พืชอินทรีย์</a> -->
+            <!-- <a class="list-group-item list-group-item-action" id="list5" data-toggle="list" href="#F-65.3" role="tab" aria-controls="home">คำขอใบรับรองการรวบรวมผลิตผล ผลิตภัณฑ์พืชอินทรีย์</a>
+            <a class="list-group-item list-group-item-action" id="list6" data-toggle="list" href="#F-65.4" role="tab" aria-controls="home">คำขอใบรับรองการจัดจำหน่ายผลิตผล ผลิตภัณฑ์พืชอินทรีย์</a>
+            <a class="list-group-item list-group-item-action" id="list7" data-toggle="list" href="#F-65.5" role="tab" aria-controls="home">คำขอใบรับรองผลิตผล และผลิตภัณฑ์อินทรีย์ สำหรับผู้นำเข้า</a>
+            <a class="list-group-item list-group-item-action" id="list8" data-toggle="list" href="#list-home" role="tab" aria-controls="home">คำขอใบรับรองแหล่งผลิตพืชอินทรีย์ การคัดบรรจุ และการแปรรูป(สำหรับกลุ่ม โครงการ องค์กร)</a>
+            <a class="list-group-item list-group-item-action" id="list9" data-toggle="list" href="#list-home" role="tab" aria-controls="home"></a>
+            <a class="list-group-item list-group-item-action" id="list10" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอต่ออายุใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</a>
+            <a class="list-group-item list-group-item-action" id="list11" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอต่ออายุใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</a>
+            <a class="list-group-item list-group-item-action" id="list12" data-toggle="list" href="#list-home" role="tab" aria-controls="home"></a>
+            <a class="list-group-item list-group-item-action" id="list213" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอหนังสือรับรอง ใบรับรอง หรือขอแก้ไขข้อมูลในใบรับรอง</a>
+            <a class="list-group-item list-group-item-action" id="list14" data-toggle="list" href="#list-home" role="tab" aria-controls="home">คำขอยกเลิกการรับรอง</a> -->
           </div>
         </div>
         <div class="col-md-8">
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+            <div class="tab-pane fade show active" id="F-62" role="tabpanel" aria-labelledby="list-F-62">
+  <?php
+ require("form/form1.php");
+   ?>
+
+            </div>
+            <div class="tab-pane fade" id="F-63" role="tabpanel" aria-labelledby="list-F-63">F63</div>
+            <div class="tab-pane fade" id="F-64" role="tabpanel" aria-labelledby="list-F-64">F64</div>
+            <div class="tab-pane fade" id="F-651" role="tabpanel" aria-labelledby="list-F-651">F651</div>
           </div>
         </div>
       </div>
@@ -96,7 +101,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
+    <script>
+      $('#list2').click(function(){
+          //  $("#list2").removeClass("active");
+          //  $("#list1").addClass("active");
+          //  $("#F-63").removeClass('active in');
+          //  $("#F-64").addClass('active in');
+       });
+    </script>
 
   </body>
 
