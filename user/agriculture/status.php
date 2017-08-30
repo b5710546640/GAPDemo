@@ -32,17 +32,17 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.php">หน้าหลัก
+              <a class="nav-link" href="D:/Save/Internship/YiiWeb/index.php">หน้าหลัก
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item  active">
+            <li class="nav-item">
               <a class="nav-link" href="profile.php">ข้อมูลส่วนตัว</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="require.php">ยื่นคำร้อง</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item  active">
               <a class="nav-link" href="status.php">สถานะคำร้อง</a>
             </li>
           </ul>
@@ -52,47 +52,13 @@
 
     <!-- Page Content -->
     <div class="container">
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4" class="col-form-label">ชื่อ</label>
-            <label type="text" class="form-control" id="inputEmail4" >สมชาย</label>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4" class="col-form-label">นามสกุล</label>
-            <label type="text" class="form-control" id="inputPassword4">มั่นคงดี</label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputEmail4" class="col-form-label">Email</label>
-          <label type="email" class="form-control" id="inputEmail4">somchai@hotmail.com</label>
-        </div>
-        <div class="form-group">
-          <label for="inputAddress" class="col-form-label">Address</label>
-          <label type="text" class="form-control" id="inputAddress">บ้านเลขที่ XXX ถนน XXXX หมู่ที่ XXX</label>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity" class="col-form-label">City</label>
-            <label type="text" class="form-control" id="inputCity">กรุงเทพ</label>
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState" class="col-form-label">State</label>
-            <label id="inputState" class="form-control">จตุจักร</label>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip" class="col-form-label">Zip</label>
-            <label type="text" class="form-control" id="inputZip">10900</label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">แก้ไข</button>
-        </form>
 
+      Status
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="collapse navbar-collapse fixed-bottom py-5 bg-dark">
+    <footer class="fixed-bottom py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
       </div>
