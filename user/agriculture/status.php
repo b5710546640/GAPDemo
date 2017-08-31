@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Item - Start Bootstrap Template</title>
+    <title>สถานะคำร้อง GAP System</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -45,6 +45,9 @@
             <li class="nav-item  active">
               <a class="nav-link" href="status.php">สถานะคำร้อง</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="D:/Save/Internship/YiiWeb/index.php">ออกจากระบบ</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,8 +55,36 @@
 
     <!-- Page Content -->
     <div class="container">
-
-      Status
+      <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>ชื่อคำขอ</th>
+      <th>วันที่ขอ</th>
+      <th>สถานะ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</td>
+      <td>11 ม.ค. 2560</td>
+      <td>หมดอายุ</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</td>
+      <td>3 มี.ค. 2560</td>
+      <td>กำลังตรวจสอบ</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>คำขอใบรับรองแหล่งผลิต (สำหรับแปลงเดียว รายเดียว)</td>
+      <td>11 ส.ค. 2560</td>
+      <td>กำลังตรวจสอบ</td>
+    </tr>
+  </tbody>
+</table>
     </div>
     <!-- /.container -->
 

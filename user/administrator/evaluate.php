@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Item - Start Bootstrap Template</title>
+    <title>ประเมิน GAP System</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -45,6 +45,9 @@
             <li class="nav-item   active">
               <a class="nav-link" href="evaluate.php">ประเมิน</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="D:/Save/Internship/YiiWeb/index.php">ออกจากระบบ</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,8 +55,91 @@
 
     <!-- Page Content -->
     <div class="container" style="margin-top:30px">
-        Evaluate
-
+      <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>ข้อกำหนด</th>
+      <th>ระดับข้อกำหนด</th>
+      <th>ผลการตรวจการประเมิน</th>
+      <th>วิธีการตวจการประเมิน</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</td>
+      <td>11 ม.ค. 2560</td>
+      <td>
+        <div class="row">
+          <select class="custom-select d-block my-3" required>
+            <option value=""></option>
+            <option value="1">ใช่</option>
+            <option value="2">ไม่ใช่</option>
+            <option value="3">N/A</option>
+          </select>
+        </div>
+        </td>
+        <td>
+          <div class="row">
+            <select class="custom-select d-block my-3" required>
+              <option value=""></option>
+              <option value="1">พินิจ</option>
+              <option value="2">สัมภาษณ์</option>
+            </select>
+          </div>
+        </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</td>
+      <td>3 มี.ค. 2560</td>
+      <td>
+        <div class="row">
+          <select class="custom-select d-block my-3" required>
+            <option value=""></option>
+            <option value="1">ใช่</option>
+            <option value="2">ไม่ใช่</option>
+            <option value="3">N/A</option>
+          </select>
+        </div>
+        </td>
+        <td>
+          <div class="row">
+            <select class="custom-select d-block my-3" required>
+              <option value=""></option>
+              <option value="1">พินิจ</option>
+              <option value="2">สัมภาษณ์</option>
+            </select>
+          </div>
+        </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>คำขอใบรับรองแหล่งผลิต (สำหรับแปลงเดียว รายเดียว)</td>
+      <td>11 ส.ค. 2560</td>
+      <td>
+        <div class="row">
+          <select class="custom-select d-block my-3" required>
+            <option value=""></option>
+            <option value="1">ใช่</option>
+            <option value="2">ไม่ใช่</option>
+            <option value="3">N/A</option>
+          </select>
+        </div>
+        </td>
+        <td>
+          <div class="row">
+            <select class="custom-select d-block my-3" required>
+              <option value=""></option>
+              <option value="1">พินิจ</option>
+              <option value="2">สัมภาษณ์</option>
+            </select>
+          </div>
+        </td>
+    </tr>
+  </tbody>
+</table>
     </div>
 
     <!-- /.container -->
