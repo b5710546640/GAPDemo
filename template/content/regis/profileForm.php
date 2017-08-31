@@ -38,15 +38,15 @@
   <div class="form-row">
     <div class="form-group col-md-3">
       <label for="subDistrictRegis" class="col-form-label">ตำบล</label>
-      <select name="subDistrictRegis" id="subDistrictRegis" class="form-control">Choose</select>
+      <input name="subDistrictRegis" id="subDistrictRegis" class="form-control">
     </div>
     <div class="form-group col-md-3">
       <label for="districtRegis" class="col-form-label">อำเภอ</label>
-      <select name="districtRegis" id="districtRegis" class="form-control">Choose</select>
+      <input name="districtRegis" id="districtRegis" class="form-control">
     </div>
     <div class="form-group col-md-3">
       <label for="provinceRegis" class="col-form-label">จังหวัด</label>
-      <select name="provinceRegis" id="provinceRegis" class="form-control">Choose</select>
+      <input name="provinceRegis" id="provinceRegis" class="form-control">
     </div>
     <div class="form-group col-md-3">
       <label for="postalCodeRegis" class="col-form-label">รหัสไปรษณีย์</label>
