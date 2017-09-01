@@ -31,11 +31,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="D:/Save/Internship/YiiWeb/index.php">หน้าหลัก
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="profile.php">ข้อมูลส่วนตัว</a>
             </li>
@@ -54,93 +54,215 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container" style="margin-top:30px">
-      <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>ข้อกำหนด</th>
-      <th>ระดับข้อกำหนด</th>
-      <th>ผลการตรวจการประเมิน</th>
-      <th>วิธีการตวจการประเมิน</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</td>
-      <td>11 ม.ค. 2560</td>
-      <td>
-        <div class="row">
-          <select class="custom-select d-block my-3" required>
-            <option value=""></option>
-            <option value="1">ใช่</option>
-            <option value="2">ไม่ใช่</option>
-            <option value="3">N/A</option>
-          </select>
-        </div>
-        </td>
-        <td>
-          <div class="row">
-            <select class="custom-select d-block my-3" required>
-              <option value=""></option>
-              <option value="1">พินิจ</option>
-              <option value="2">สัมภาษณ์</option>
-            </select>
+    <div class="container">
+      <div class="row" id="list-require-form">
+        <div class="col-md-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-F-1" data-toggle="list" href="#F-1" role="tab" aria-controls="F-1">ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</a>
+            <a class="list-group-item list-group-item-action" id="list-F-2" data-toggle="list" href="#F-2" role="tab" aria-controls="F-2">ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</a>
+            <a class="list-group-item list-group-item-action" id="list-F-3" data-toggle="list" href="#F-3" role="tab" aria-controls="F-3">คำขอใบรับรองแหล่งผลิต (สำหรับแปลงเดียว รายเดียว)</a>
+            <a class="list-group-item list-group-item-action" id="list-F-4" data-toggle="list" href="#F-4" role="tab" aria-controls="F-4">คำขอใบรับรองการคัดบรรจุผลิตผลพืชอินทรีย์</a>
+            <!-- <a class="list-group-item list-group-item-action" id="list-F-65.2" data-toggle="list" href="#F-65.2" role="tab" aria-controls="home">คำขอใบรับรองการแปรรูปผลิตภัณฑ์พืชอินทรีย์</a> -->
+            <!-- <a class="list-group-item list-group-item-action" id="list5" data-toggle="list" href="#F-65.3" role="tab" aria-controls="home">คำขอใบรับรองการรวบรวมผลิตผล ผลิตภัณฑ์พืชอินทรีย์</a>
+            <a class="list-group-item list-group-item-action" id="list6" data-toggle="list" href="#F-65.4" role="tab" aria-controls="home">คำขอใบรับรองการจัดจำหน่ายผลิตผล ผลิตภัณฑ์พืชอินทรีย์</a>
+            <a class="list-group-item list-group-item-action" id="list7" data-toggle="list" href="#F-65.5" role="tab" aria-controls="home">คำขอใบรับรองผลิตผล และผลิตภัณฑ์อินทรีย์ สำหรับผู้นำเข้า</a>
+            <a class="list-group-item list-group-item-action" id="list8" data-toggle="list" href="#list-home" role="tab" aria-controls="home">คำขอใบรับรองแหล่งผลิตพืชอินทรีย์ การคัดบรรจุ และการแปรรูป(สำหรับกลุ่ม โครงการ องค์กร)</a>
+            <a class="list-group-item list-group-item-action" id="list9" data-toggle="list" href="#list-home" role="tab" aria-controls="home"></a>
+            <a class="list-group-item list-group-item-action" id="list10" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอต่ออายุใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</a>
+            <a class="list-group-item list-group-item-action" id="list11" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอต่ออายุใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</a>
+            <a class="list-group-item list-group-item-action" id="list12" data-toggle="list" href="#list-home" role="tab" aria-controls="home"></a>
+            <a class="list-group-item list-group-item-action" id="list213" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอหนังสือรับรอง ใบรับรอง หรือขอแก้ไขข้อมูลในใบรับรอง</a>
+            <a class="list-group-item list-group-item-action" id="list14" data-toggle="list" href="#list-home" role="tab" aria-controls="home">คำขอยกเลิกการรับรอง</a> -->
           </div>
-        </td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</td>
-      <td>3 มี.ค. 2560</td>
-      <td>
-        <div class="row">
-          <select class="custom-select d-block my-3" required>
-            <option value=""></option>
-            <option value="1">ใช่</option>
-            <option value="2">ไม่ใช่</option>
-            <option value="3">N/A</option>
-          </select>
         </div>
-        </td>
-        <td>
-          <div class="row">
-            <select class="custom-select d-block my-3" required>
-              <option value=""></option>
-              <option value="1">พินิจ</option>
-              <option value="2">สัมภาษณ์</option>
-            </select>
+        <div class="col-md-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="F-1" role="tabpanel" aria-labelledby="list-F-1">
+              <p>หมายเลขคำร้อง 00001</p>
+              <p>ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</p>
+              <table class="table table-striped">
+              <thead>
+              <tr>
+              <th>#</th>
+              <th>ข้อกำหนด</th>
+              <th>ระดับข้อกำหนด</th>
+              <th>ผลการตรวจการประเมิน</th>
+              <th>วิธีการตวจการประเมิน</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <th scope="row">1</th>
+              <td>น้ำที่ใช้ในกระบวนการ...........</td>
+              <td>ข้อกำหนดหลัก (1.1)</td>
+              <td>
+                <div class="row">
+                  <select class="custom-select d-block my-3" required>
+                    <option value=""></option>
+                    <option value="1">ใช่</option>
+                    <option value="2">ไม่ใช่</option>
+                    <option value="3">N/A</option>
+                  </select>
+                </div>
+                </td>
+                <td>
+                  <div class="row">
+                    <select class="custom-select d-block my-3" required>
+                      <option value=""></option>
+                      <option value="1">พินิจ</option>
+                      <option value="2">สัมภาษณ์</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+              <th scope="row">2</th>
+              <td>ดินที่ใช้ในกระบวนการ...........</td>
+              <td>ข้อกำหนดหลัก (1.2)</td>
+              <td>
+                <div class="row">
+                  <select class="custom-select d-block my-3" required>
+                    <option value=""></option>
+                    <option value="1">ใช่</option>
+                    <option value="2">ไม่ใช่</option>
+                    <option value="3">N/A</option>
+                  </select>
+                </div>
+                </td>
+                <td>
+                  <div class="row">
+                    <select class="custom-select d-block my-3" required>
+                      <option value=""></option>
+                      <option value="1">พินิจ</option>
+                      <option value="2">สัมภาษณ์</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+              <th scope="row">3</th>
+              <td>น้ำที่ใช้หลังการเก็บเกี่ยว...........</td>
+              <td>ข้อกำหนดหลัก (1.3)</td>
+              <td>
+                <div class="row">
+                  <select class="custom-select d-block my-3" required>
+                    <option value=""></option>
+                    <option value="1">ใช่</option>
+                    <option value="2">ไม่ใช่</option>
+                    <option value="3">N/A</option>
+                  </select>
+                </div>
+                </td>
+                <td>
+                  <div class="row">
+                    <select class="custom-select d-block my-3" required>
+                      <option value=""></option>
+                      <option value="1">พินิจ</option>
+                      <option value="2">สัมภาษณ์</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="F-2" role="tabpanel" aria-labelledby="list-F-2">
+              <p>หมายเลขคำร้อง 00002</p>
+              <p>ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</p>
+              <table class="table table-striped">
+                <thead>
+                <tr>
+                <th>#</th>
+                <th>ข้อกำหนด</th>
+                <th>ระดับข้อกำหนด</th>
+                <th>ผลการตรวจการประเมิน</th>
+                <th>วิธีการตวจการประเมิน</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <th scope="row">1</th>
+                <td>น้ำที่ใช้ในกระบวนการ...........</td>
+                <td>ข้อกำหนดหลัก (1.1)</td>
+                <td>
+                  <div class="row">
+                    <select class="custom-select d-block my-3" required>
+                      <option value=""></option>
+                      <option value="1">ใช่</option>
+                      <option value="2">ไม่ใช่</option>
+                      <option value="3">N/A</option>
+                    </select>
+                  </div>
+                  </td>
+                  <td>
+                    <div class="row">
+                      <select class="custom-select d-block my-3" required>
+                        <option value=""></option>
+                        <option value="1">พินิจ</option>
+                        <option value="2">สัมภาษณ์</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                <th scope="row">2</th>
+                <td>ดินที่ใช้ในกระบวนการ...........</td>
+                <td>ข้อกำหนดหลัก (1.2)</td>
+                <td>
+                  <div class="row">
+                    <select class="custom-select d-block my-3" required>
+                      <option value=""></option>
+                      <option value="1">ใช่</option>
+                      <option value="2">ไม่ใช่</option>
+                      <option value="3">N/A</option>
+                    </select>
+                  </div>
+                  </td>
+                  <td>
+                    <div class="row">
+                      <select class="custom-select d-block my-3" required>
+                        <option value=""></option>
+                        <option value="1">พินิจ</option>
+                        <option value="2">สัมภาษณ์</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                <th scope="row">3</th>
+                <td>น้ำที่ใช้หลังการเก็บเกี่ยว...........</td>
+                <td>ข้อกำหนดหลัก (1.3)</td>
+                <td>
+                  <div class="row">
+                    <select class="custom-select d-block my-3" required>
+                      <option value=""></option>
+                      <option value="1">ใช่</option>
+                      <option value="2">ไม่ใช่</option>
+                      <option value="3">N/A</option>
+                    </select>
+                  </div>
+                  </td>
+                  <td>
+                    <div class="row">
+                      <select class="custom-select d-block my-3" required>
+                        <option value=""></option>
+                        <option value="1">พินิจ</option>
+                        <option value="2">สัมภาษณ์</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="F-3" role="tabpanel" aria-labelledby="list-F-3">F64</div>
+            <div class="tab-pane fade" id="F-4" role="tabpanel" aria-labelledby="list-F-4">F651</div>
           </div>
-        </td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>คำขอใบรับรองแหล่งผลิต (สำหรับแปลงเดียว รายเดียว)</td>
-      <td>11 ส.ค. 2560</td>
-      <td>
-        <div class="row">
-          <select class="custom-select d-block my-3" required>
-            <option value=""></option>
-            <option value="1">ใช่</option>
-            <option value="2">ไม่ใช่</option>
-            <option value="3">N/A</option>
-          </select>
         </div>
-        </td>
-        <td>
-          <div class="row">
-            <select class="custom-select d-block my-3" required>
-              <option value=""></option>
-              <option value="1">พินิจ</option>
-              <option value="2">สัมภาษณ์</option>
-            </select>
-          </div>
-        </td>
-    </tr>
-  </tbody>
-</table>
+      </div>
     </div>
+
+
 
     <!-- /.container -->
 

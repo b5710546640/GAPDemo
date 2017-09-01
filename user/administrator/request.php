@@ -31,11 +31,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="D:/Save/Internship/YiiWeb/index.php">หน้าหลัก
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="profile.php">ข้อมูลส่วนตัว</a>
             </li>
@@ -54,15 +54,15 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container" style="margin-top:30px">
-      <div class="row">
-        <div class="col-md-12">
+    <div class="container">
+      <div class="row" id="list-require-form">
+        <div class="col-md-4">
           <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#F-62" role="tab" aria-controls="home">ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-63" role="tab" aria-controls="home">ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-64" role="tab" aria-controls="home">คำขอใบรับรองแหล่งผลิต (สำหรับแปลงเดียว รายเดียว)</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.1" role="tab" aria-controls="home">คำขอใบรับรองการคัดบรรจุผลิตผลพืชอินทรีย์</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.2" role="tab" aria-controls="home">คำขอใบรับรองการแปรรูปผลิตภัณฑ์พืชอินทรีย์</a>
+            <a class="list-group-item list-group-item-action active" id="list-F-1" data-toggle="list" href="#F-1" role="tab" aria-controls="F-1">ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</a>
+            <a class="list-group-item list-group-item-action" id="list-F-2" data-toggle="list" href="#F-2" role="tab" aria-controls="F-2">ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</a>
+            <a class="list-group-item list-group-item-action" id="list-F-3" data-toggle="list" href="#F-3" role="tab" aria-controls="F-3">คำขอใบรับรองแหล่งผลิต (สำหรับแปลงเดียว รายเดียว)</a>
+            <a class="list-group-item list-group-item-action" id="list-F-4" data-toggle="list" href="#F-4" role="tab" aria-controls="F-4">คำขอใบรับรองการคัดบรรจุผลิตผลพืชอินทรีย์</a>
+            <!-- <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.2" role="tab" aria-controls="home">คำขอใบรับรองการแปรรูปผลิตภัณฑ์พืชอินทรีย์</a>
             <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.3" role="tab" aria-controls="home">คำขอใบรับรองการรวบรวมผลิตผล ผลิตภัณฑ์พืชอินทรีย์</a>
             <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.4" role="tab" aria-controls="home">คำขอใบรับรองการจัดจำหน่ายผลิตผล ผลิตภัณฑ์พืชอินทรีย์</a>
             <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#F-65.5" role="tab" aria-controls="home">คำขอใบรับรองผลิตผล และผลิตภัณฑ์อินทรีย์ สำหรับผู้นำเข้า</a>
@@ -72,19 +72,152 @@
             <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอต่ออายุใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</a>
             <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">------------------------------</a>
             <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">ฟอร์มคำขอหนังสือรับรอง ใบรับรอง หรือขอแก้ไขข้อมูลในใบรับรอง</a>
-            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">คำขอยกเลิกการรับรอง</a>
+            <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">คำขอยกเลิกการรับรอง</a> -->
           </div>
         </div>
         <div class="col-md-8">
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+            <div class="tab-pane fade show active" id="F-1" role="tabpanel" aria-labelledby="list-F-1">
+              <p>ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับแปลงเดียว)</p>
+              <div class="form-group" >
+                <div class="form-group">
+                  <label for="usernameRegis" class="col-form-label">ชื่อนิติบุคคล</label>
+                  <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="ชื่อนิติบุคคล">
+                </div>
+                <div class="form-group">
+                  <label for="usernameRegis" class="col-form-label">ชื่อผู้มีอำนาจลงนาม</label>
+                  <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="ชื่อ-สกุล">
+                </div>
+                <div class="form-group">
+                  <label for="usernameRegis" class="col-form-label">เลขประจำตัวประชาชนของผู้มีอำนาจลงนาม</label>
+                  <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="เลขประจำตัวประชาชน13หลัก">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="addressNoRegis" class="col-form-label">บ้านเลขที่</label>
+                    <input type="text" class="form-control" name="addressNoRegis" id="addressNoRegis">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="villageRegis" class="col-form-label">หมู่บ้าน</label>
+                    <input type="text" class="form-control" name="villageRegis" id="villageRegis">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="mooRegis" class="col-form-label">หมู่ที่</label>
+                    <input type="text" class="form-control" name="mooRegis" id="mooRegis">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="roadRegis" class="col-form-label">ถนน</label>
+                    <input type="text" class="form-control" name="roadRegis" id="roadRegis">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="subDistrictRegis" class="col-form-label">ตำบล</label>
+                    <select name="subDistrictRegis" id="subDistrictRegis" class="form-control">Choose</select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="districtRegis" class="col-form-label">อำเภอ</label>
+                    <select name="districtRegis" id="districtRegis" class="form-control">Choose</select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="provinceRegis" class="col-form-label">จังหวัด</label>
+                    <select name="provinceRegis" id="provinceRegis" class="form-control">Choose</select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="postalCodeRegis" class="col-form-label">รหัสไปรษณีย์</label>
+                    <input type="text" class="form-control" name="postalRegis" id="postalRegis">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="phoneRegis" class="col-form-label">โทรศัพท์บ้าน</label>
+                    <input type="text" class="form-control" name="phoneRegis" id="phoneRegis" placeholder="XXX-XXXXXX">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="mobileRegis" class="col-form-label">โทรศัพท์มือถือ</label>
+                    <input type="text" class="form-control" name="mobileRegis" id="mobileRegis" placeholder="XXX-XXXXXXX">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="usernameRegis" class="col-form-label">Email</label>
+                  <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="Email">
+                </div>
+                <button type="button" class="btn btn-primary" id="approve_btn">Approve</button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="F-2" role="tabpanel" aria-labelledby="list-F-2">
+              <p>ฟอร์มคำขอใบรับรองแหล่งผลิต GAP พืช (สำหรับกลุ่ม)</p>
+              <div class="form-group" >
+                <div class="form-group">
+                  <label for="usernameRegis" class="col-form-label">ชื่อนิติบุคคล</label>
+                  <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="ชื่อนิติบุคคล">
+                </div>
+                <div class="form-group">
+                  <label for="usernameRegis" class="col-form-label">ชื่อผู้มีอำนาจลงนาม</label>
+                  <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="ชื่อ-สกุล">
+                </div>
+                <div class="form-group">
+                  <label for="usernameRegis" class="col-form-label">เลขประจำตัวประชาชนของผู้มีอำนาจลงนาม</label>
+                  <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="เลขประจำตัวประชาชน13หลัก">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="addressNoRegis" class="col-form-label">บ้านเลขที่</label>
+                    <input type="text" class="form-control" name="addressNoRegis" id="addressNoRegis">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="villageRegis" class="col-form-label">หมู่บ้าน</label>
+                    <input type="text" class="form-control" name="villageRegis" id="villageRegis">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="mooRegis" class="col-form-label">หมู่ที่</label>
+                    <input type="text" class="form-control" name="mooRegis" id="mooRegis">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="roadRegis" class="col-form-label">ถนน</label>
+                    <input type="text" class="form-control" name="roadRegis" id="roadRegis">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="subDistrictRegis" class="col-form-label">ตำบล</label>
+                    <select name="subDistrictRegis" id="subDistrictRegis" class="form-control">Choose</select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="districtRegis" class="col-form-label">อำเภอ</label>
+                    <select name="districtRegis" id="districtRegis" class="form-control">Choose</select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="provinceRegis" class="col-form-label">จังหวัด</label>
+                    <select name="provinceRegis" id="provinceRegis" class="form-control">Choose</select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="postalCodeRegis" class="col-form-label">รหัสไปรษณีย์</label>
+                    <input type="text" class="form-control" name="postalRegis" id="postalRegis">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="phoneRegis" class="col-form-label">โทรศัพท์บ้าน</label>
+                    <input type="text" class="form-control" name="phoneRegis" id="phoneRegis" placeholder="XXX-XXXXXX">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="mobileRegis" class="col-form-label">โทรศัพท์มือถือ</label>
+                    <input type="text" class="form-control" name="mobileRegis" id="mobileRegis" placeholder="XXX-XXXXXXX">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="usernameRegis" class="col-form-label">Email</label>
+                  <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="Email">
+                </div>
+                <button type="button" class="btn btn-primary" id="approve_btn">Approve</button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="F-3" role="tabpanel" aria-labelledby="list-F-3">F64</div>
+            <div class="tab-pane fade" id="F-4" role="tabpanel" aria-labelledby="list-F-4">F651</div>
           </div>
         </div>
       </div>
-
     </div>
 
     <!-- /.container -->

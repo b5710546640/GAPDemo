@@ -31,11 +31,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="D:/Save/Internship/YiiWeb/index.php">หน้าหลัก
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item  active">
               <a class="nav-link" href="profile.php">ข้อมูลส่วนตัว</a>
             </li>

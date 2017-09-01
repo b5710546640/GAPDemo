@@ -31,11 +31,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="D:/Save/Internship/YiiWeb/index.php">หน้าหลัก
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item  active">
               <a class="nav-link" href="profile.php">ข้อมูลส่วนตัว</a>
             </li>
@@ -67,7 +67,8 @@
         <div class="tab-content card">
           <!--Panel 1-->
           <div class="tab-pane fade in show active" id="panel_account" role="tabpanel">
-            <div class="form-group" id="group-edit-account">
+            <form>
+            <div class="form-group" id="group-edit-account" style="display: none">
               <div class="form-group">
                 <label for="usernameRegis" class="col-form-label">ชื่อผู้ใช้</label>
                 <input type="email" class="form-control" name="usernameRegis" id="usernameRegis" placeholder="ชื่อผู้ใช้">
@@ -84,7 +85,8 @@
                 <label for="emailRegis" class="col-form-label">Email</label>
                 <input type="email" class="form-control" name="emailRegis" id="emailRegis" placeholder="Email">
               </div>
-              <button type="button" class="btn btn-primary" id="go-profile-input_btn">บันทึก</button>
+              <button type="button" class="btn btn-primary" id="cancel_account_btn">ยกเลิก</button>
+              <button type="submit" class="btn btn-primary" id="save_account_btn">บันทึก</button>
             </div>
             <div class="form-group" id="group-view-account">
               <div class="form-group">
@@ -103,14 +105,15 @@
                 <label for="emailRegis" class="col-form-label">Email</label>
                 <label type="email" class="form-control" name="emailRegis" id="emailRegis">somchai-m</label>
               </div>
-              <button type="button" class="btn btn-primary" id="go-profile-input_btn">แก้ไข</button>
+              <button type="button" class="btn btn-primary" id="edit_account_btn">แก้ไข</button>
             </div>
+          </form>
           </div>
           <!--/.Panel 1-->
           <!--Panel 2-->
           <div class="tab-pane fade" id="panel_profile" role="tabpanel">
             <form>
-              <div class="form-group" id="group-profile-regis">
+              <div class="form-group" id="group-edit-profile" style="display: none">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="nameRegis" class="col-form-label">ชื่อ</label>
@@ -175,8 +178,76 @@
                     <input type="text" class="form-control" name="mobileRegis" id="mobileRegis" placeholder="XXX-XXXXXXX">
                   </div>
                 </div>
-                <button type="button" class="btn btn-primary" id="back_btn">ย้อนกลับ</button>
-                <button type="submit" class="btn btn-primary" id="submit_btn">ลงทะเบียน</button>
+                <button type="button" class="btn btn-primary" id="cancel_profile_btn">ยกเลิก</button>
+                <button type="submit" class="btn btn-primary" id="save_profile_btn">บันทึก</button>
+              </div>
+
+              <div class="form-group" id="group-view-profile">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="nameRegis" class="col-form-label">ชื่อ</label>
+                    <label type="text" class="form-control" name="nameRegis" id="nameRegis">สมชาย</label>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="fnameRegis" class="col-form-label">นามสกุล</label>
+                    <label type="text" class="form-control" name="fnameRegis" id="fnameRegis">มั่นคงดี</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="nationalIDRegis" class="col-form-label">เลขประจำตัวประชาชน</label>
+                    <label type="text" class="form-control" name="nationalIDRegis" id="nationalIDRegis">1111111111111</label>
+                  </div>
+                  <div class="form-group col-md-6">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="addressNoRegis" class="col-form-label">บ้านเลขที่</label>
+                    <label type="text" class="form-control" name="addressNoRegis" id="addressNoRegis">1</label>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="villageRegis" class="col-form-label">หมู่บ้าน</label>
+                    <label type="text" class="form-control" name="villageRegis" id="villageRegis">1</label>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="mooRegis" class="col-form-label">หมู่ที่</label>
+                    <label type="text" class="form-control" name="mooRegis" id="mooRegis">1</label>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="roadRegis" class="col-form-label">ถนน</label>
+                    <label type="text" class="form-control" name="roadRegis" id="roadRegis">สวัสดี</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="subDistrictRegis" class="col-form-label">ตำบล</label>
+                    <label name="subDistrictRegis" id="subDistrictRegis" class="form-control">Choose</label>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="districtRegis" class="col-form-label">อำเภอ</label>
+                    <label name="districtRegis" id="districtRegis" class="form-control">Choose</label>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="provinceRegis" class="col-form-label">จังหวัด</label>
+                    <label name="provinceRegis" id="provinceRegis" class="form-control">Choose</label>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="postalCodeRegis" class="col-form-label">รหัสไปรษณีย์</label>
+                    <label type="text" class="form-control" name="postalRegis" id="postalRegis">10000</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="phoneRegis" class="col-form-label">โทรศัพท์บ้าน</label>
+                    <label type="text" class="form-control" name="phoneRegis" id="phoneRegis">XXX-XXXXXX</label>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="mobileRegis" class="col-form-label">โทรศัพท์มือถือ</label>
+                    <label type="text" class="form-control" name="mobileRegis" id="mobileRegis">XXX-XXXXXXX</label>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary" id="edit_profile_btn">แก้ไข</button>
               </div>
 
               </form>
@@ -203,10 +274,65 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
     <script>
-        $('#container').find('.input').each(function() {
-          console.log('input');
-          $(this).replaceWith("<span>" + this.value + "</span>");
-        });
+        $('#edit_account_btn').click(function(){
+              var x = document.getElementById('group-edit-account');
+              var y = document.getElementById('group-view-account');
+               if (x.style.display === 'none') {
+                   x.style.display = 'block';
+               } else {
+                   x.style.display = 'none';
+               }
+               if (y.style.display === 'none') {
+                   y.style.display = 'block';
+               } else {
+                   y.style.display = 'none';
+               }
+           });
+
+           $('#edit_profile_btn').click(function(){
+                 var x = document.getElementById('group-edit-profile');
+                 var y = document.getElementById('group-view-profile');
+                  if (x.style.display === 'none') {
+                      x.style.display = 'block';
+                  } else {
+                      x.style.display = 'none';
+                  }
+                  if (y.style.display === 'none') {
+                      y.style.display = 'block';
+                  } else {
+                      y.style.display = 'none';
+                  }
+              });
+
+              $('#cancel_account_btn').click(function(){
+                    var x = document.getElementById('group-edit-account');
+                    var y = document.getElementById('group-view-account');
+                     if (x.style.display === 'none') {
+                         x.style.display = 'block';
+                     } else {
+                         x.style.display = 'none';
+                     }
+                     if (y.style.display === 'none') {
+                         y.style.display = 'block';
+                     } else {
+                         y.style.display = 'none';
+                     }
+                 });
+
+                 $('#cancel_profile_btn').click(function(){
+                       var x = document.getElementById('group-edit-profile');
+                       var y = document.getElementById('group-view-profile');
+                        if (x.style.display === 'none') {
+                            x.style.display = 'block';
+                        } else {
+                            x.style.display = 'none';
+                        }
+                        if (y.style.display === 'none') {
+                            y.style.display = 'block';
+                        } else {
+                            y.style.display = 'none';
+                        }
+                    });
 
     </script>
 
